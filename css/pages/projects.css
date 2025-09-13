@@ -1,0 +1,80 @@
+.projects-page .page-content {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.projects-page .page-content .filters {
+    display: flex;
+    margin-bottom: 60px;
+}
+.projects-page .page-content .filters > * {
+    flex: 1 0 0%;
+}
+.projects-page .page-content .filters > *:not(:last-child) {
+    margin-right: 45px;
+}
+.projects-page .page-content .subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.projects-page .page-content .desc {
+    margin-bottom: 5%;
+}
+
+.select {
+    appearance: none;
+    padding: 13px 50px 13px 20px ;
+    width: 100%;
+    background-color: #fff;
+    background-image: url("../../img/svg/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px top 50%;
+    background-size: 24px 24px;
+    border: 1px solid #42446e;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #666;
+}
+
+.projects-section .inner > * {
+    flex-shrink: 0;
+    width: 32%;
+    margin-bottom: 30px;
+}
+
+.projects-section .inner.full-width > * {
+    width: 100%;
+    display: flex;
+}
+
+.toggle-view-btn {
+    max-width: 44px;
+    max-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(22%) sepia(11%) saturate(5056%) hue-rotate(211deg) brightness(101%) contrast(94%);
+}
+
+.toggle-view-btn img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.filters{
+    max-height: 44px;
+}
+
+.js-projects-container.inner > .no-items-message {
+    margin: auto;
+    color: #42446e;
+
+}
+
+.no-items-message {
+    width: 100%;
+}

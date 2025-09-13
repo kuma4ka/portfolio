@@ -1,0 +1,39 @@
+.main-content {
+    background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-card {
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-badge {
+    font-size: 0.9rem;
+    margin: 0.2rem;
+}
+.project-date {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.pet-projects li {
+    list-style-image: url(../../img/svg/x_mark.svg);
+}
+
+.list-unstyled .link {
+    color: #0d6efd; /* A standard, professional blue for links */
+    text-decoration: none; /* Removes the default underline for a cleaner look */
+    font-weight: 500;
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.list-unstyled .link:hover {
+    color: #0a58ca; /* A slightly darker blue on hover */
+    text-decoration: underline; /* Adds an underline on hover for clear feedback */
+}
