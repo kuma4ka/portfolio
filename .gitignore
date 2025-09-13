@@ -1,0 +1,90 @@
+# --------------------------------------------------------
+# General ignore rules
+# --------------------------------------------------------
+
+# Ignore hidden/backup files
+.*
+~*
+
+# Ignore dependency directories
+node_modules/
+vendor/
+bower_components/
+
+# Ignore build/output directories
+/build
+/dist
+/_site
+
+# --------------------------------------------------------
+# OS generated files
+# --------------------------------------------------------
+ehthumbs.db
+Thumbs.db
+.DS_Store
+
+# --------------------------------------------------------
+# Editor/IDE specific
+# --------------------------------------------------------
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Komodo
+*.komodoproject
+
+# JetBrains (IntelliJ IDEA, PhpStorm, WebStorm, PyCharm, Rider, etc.)
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/*
+
+# --------------------------------------------------------
+# Logs and databases
+# --------------------------------------------------------
+*.log
+*.sql
+*.sqlite
+
+# --------------------------------------------------------
+# Compiled files
+# --------------------------------------------------------
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# --------------------------------------------------------
+# Packaged files
+# --------------------------------------------------------
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# --------------------------------------------------------
+# Private/secret files
+# --------------------------------------------------------
+*.der
+*.key
+*.pem
+
+# --------------------------------------------------------
+# BEGIN Explicitly Allowed Files (do NOT ignore these)
+# --------------------------------------------------------
+!.dockerignore
+!.editorconfig
+!.env.example
+!.git-blame-ignore-revs
+!.gitignore
+!.nvmrc
+!.phpcs.xml.dist
