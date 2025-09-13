@@ -1,0 +1,49 @@
+.hero-section {
+    padding: 10% 1rem; /* shorthand for cleaner code */
+    gap: 1.5rem; /* a bit more breathing room */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* centers any text content */
+}
+
+.hero-section img {
+    padding: 0;
+    border-radius: 50%;
+    width: 150px; /* fixed size instead of mixing max-width & max-height */
+    height: 150px;
+    object-fit: cover; /* keeps image properly cropped */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* smoother + faster */
+}
+
+.hero-section img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.image-with-border {
+    border: 4px solid #fff;
+    padding: 6px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 800px) {
+    .hero-section {
+        padding: 5% 1rem;
+        gap: 1rem;
+    }
+
+    .hero-section img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .hero-section img:hover {
+        transform: none;
+        box-shadow: none;
+        cursor: default;
+    }
+}

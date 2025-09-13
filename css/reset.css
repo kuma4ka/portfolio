@@ -1,0 +1,60 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+*::before,*::after {
+    display: inline-block;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
