@@ -1,11 +1,23 @@
+html, body {
+    height: 100%;    /* ensures the body spans full viewport height */
+    margin: 0;
+}
+
 body {
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
     font-family: 'Poppins', sans-serif, Arial;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-    position: relative;
-    z-index: 1;
+}
+
+/* New Flexbox container rule */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This makes the container take up full viewport height */
+    justify-content: space-between;
 }
 
 body::before {
@@ -15,9 +27,23 @@ body::before {
     right: -20px;
     bottom: -20px;
     left: -20px;
-    background: url("../img/jpg/bg.jpg") center/cover no-repeat;
-    opacity: 1;
+    background: url("../img/gif/bg.gif") center/cover no-repeat;
+    z-index: -2; /* push below everything */
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    background: rgba(0,0,0,0.4); /* adjust alpha for darkness */
     z-index: -1;
+}
+
+main {
+    flex: 1; /* This will now grow to fill the container, pushing the footer down */
 }
 
 a {
