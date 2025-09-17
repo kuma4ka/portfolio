@@ -5,42 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects | Dmytro Prokopenko</title>
     <link rel="icon" type="image/x-icon" href="../img/jpg/photo.jpg">
+
     <!-- Bootstrap CSS (only for project section) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
           crossorigin="anonymous">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <!-- Custom CSS -->
     <link href="../css/main.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <!-- Navigation -->
-        <header class="header">
-            <nav class="nav">
-                <ul class="list">
-                    <li class="item"><a href="../index.html" class="link">Home</a></li>
-                    <li class="item"><a href="about.html" class="link">About</a></li>
-                    <li class="item"><a href="projects.html" class="link">Projects</a></li>
-                    <li class="item"><a href="cv.html" class="link">CV</a></li>
-                </ul>
-            </nav>
-        </header>
+<body class="projects-page">
+<div class="container">
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <ul class="list">
+                <li class="item"><a href="../index.html" class="link">Home</a></li>
+                <li class="item"><a href="about.html" class="link">About</a></li>
+                <li class="item"><a href="projects.html" class="link">Projects</a></li>
+                <li class="item"><a href="cv.html" class="link">CV</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Projects Section (Bootstrap applied here) -->
-        <section class="projects my-5">
-            <div class="card shadow-lg border-0 rounded-4 mb-4">
-                <div class="card-body p-4">
-                    <h3 class="card-title mb-3">
-                        <i class="bi bi-broadcast-pin text-primary"></i> Stream API
-                        <span class="badge bg-secondary ms-2">June 2024 – Present</span>
-                    </h3>
-                    <p class="card-text">
-                        An API for a streaming platform where users can launch and watch broadcasts with category-based filtering
-                        and role-specific permissions.
-                    </p>
+    <!-- Projects Section (Bootstrap applied here) -->
+    <section class="projects my-5">
 
+        <div class="card shadow-lg border-0 rounded-4 mb-4">
+            <div class="card-body p-4">
+                <h3 class="card-title mb-3">
+                    <i class="bi bi-broadcast-pin text-primary"></i> Stream API
+                    <span class="badge bg-secondary ms-2">June 2024 – Present</span>
+                </h3>
+                <p class="card-text">
+                    An API for a streaming platform where users can launch and watch broadcasts with category-based filtering
+                    and role-specific permissions.
+                </p>
+
+                <!-- Toggle Buttons -->
+                <div class="d-flex gap-2 mb-3">
+                    <button id="toggleDetails" class="btn btn-outline-primary btn-sm">
+                        Show Details
+                    </button>
+                    <button id="themeToggle" class="btn btn-sm btn-dark">
+                        Toggle Theme
+                    </button>
+                </div>
+
+                <!-- Details (hidden by default) -->
+                <div id="details" style="display: none;">
                     <div class="row">
                         <!-- Responsibilities -->
                         <div class="col-md-6">
@@ -67,16 +83,19 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer footer-upgrade text-center py-3">
-            <small>&copy; 2025 Dmytro Prokopenko |
-                <a href="mailto:portal200385@gmail.com" class="email link">Send an Email</a>
-            </small>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer class="footer footer-upgrade text-center py-3">
+        <small>&copy; 2025 Dmytro Prokopenko |
+            <a href="mailto:portal200385@gmail.com" class="email link">Send an Email</a>
+        </small>
+    </footer>
+</div>
+
 <!-- Bootstrap JS only if needed in project section -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/projects.js"></script>
 </body>
 </html>
