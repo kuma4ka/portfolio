@@ -25,3 +25,17 @@
     line-height: 2;
     color: #66ffda;
 }
+
+/* Dark mode overrides */
+body.bg-dark .h1,
+body.bg-dark .h2 {
+    color: #212529; /* dark gray / near-black */
+}
+
+body.bg-dark .h3 {
+    color: #00695c; /* darker teal tone for readability */
+}
+
+body.bg-dark .p {
+    color: #212529; /* dark text */
+}

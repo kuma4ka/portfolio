@@ -3,10 +3,24 @@
 }
 
 .site-main {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    );
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
     margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Dark mode override */
+body.bg-dark .site-main {
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.6), /* milk white */
+            rgba(255, 255, 255, 0.6)
+    );
 }

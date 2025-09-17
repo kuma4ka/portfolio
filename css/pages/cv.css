@@ -1,3 +1,4 @@
+/* ===== Default (light theme) ===== */
 .main-content {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
     padding: 2rem;
@@ -5,12 +6,15 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color: #212529;
 }
 
 .section-card {
     margin-bottom: 1.5rem;
     border: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #212529;
 }
 
 .skill-badge {
@@ -27,14 +31,100 @@
     list-style-image: url(../../img/svg/x_mark.svg);
 }
 
+/* Certification links */
 .list-unstyled .link {
-    color: #0d6efd; /* A standard, professional blue for links */
-    text-decoration: none; /* Removes the default underline for a cleaner look */
+    color: #0d6efd;
+    text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out; /* Smooth transition for hover effects */
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
 .list-unstyled .link:hover {
-    color: #0a58ca; /* A slightly darker blue on hover */
-    text-decoration: underline; /* Adds an underline on hover for clear feedback */
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+/* Download CV Button */
+.cv-download-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #198754; /* Bootstrap green */
+    color: #198754;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cv-download-btn:hover {
+    background: #198754;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.4);
+    transform: translateY(-2px);
+}
+
+/* ===== Dark Theme Overrides ===== */
+body.bg-dark {
+    background-color: #121212 !important;
+    color: #f8f9fa !important;
+}
+
+body.bg-dark .card {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    border: none;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.bg-dark .card-subtitle {
+    color: #b0b0b0 !important;
+}
+
+body.bg-dark .email-link {
+    color: #66b2ff;
+}
+
+body.bg-dark .email-link:hover {
+    color: #99ccff;
+    text-decoration: underline;
+}
+
+body.bg-dark .social-list .icon {
+    filter: brightness(0) invert(1); /* makes SVG logos visible on dark bg */
+}
+
+body.bg-dark .main-content {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15));
+    color: #f8f9fa;
+}
+
+body.bg-dark .section-card {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.bg-dark .project-date {
+    color: #b0b0b0;
+}
+
+body.bg-dark .list-unstyled .link {
+    color: #66b2ff;
+}
+
+body.bg-dark .list-unstyled .link:hover {
+    color: #99ccff;
+}
+
+body.bg-dark .cv-download-btn {
+    border-color: #66ff99;
+    color: #66ff99;
+}
+
+body.bg-dark .cv-download-btn:hover {
+    background: #66ff99;
+    color: #121212;
+    box-shadow: 0 4px 12px rgba(102, 255, 153, 0.4);
 }
